@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanna Camille Academy</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0077cc;
+        }
+
+        /* Header */
+        header {
+            background-color: #006400; /* Green */
+            color: gold; /* Gold */
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a:hover {
+            color: orange; /* Orange */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+            color: gold;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .hero p {
+            margin-top: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: gold;
+            color: #006400;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        /* Course Materials */
+        .resources ul, .collab ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .resources li, .collab li {
+            padding: 0.5rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Blog */
+        .blog-post {
+            margin: 1rem 0;
+        }
+
+        .blog-post h3 {
+            margin: 0;
+        }
+
+        .blog-post p {
+            font-size: 0.9rem;
+        }
+
+        .blog-post a {
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #006400; /* Green */
+            color: gold; /* Gold */
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Hanna Camille Academy</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#collaboration">Collaboration</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Study CSEC P.O.B. & Economics</h2>
+        <p>Unlock your potential with personalized classes online or in-person.</p>
+        <a href="#contact" class="btn">Contact Me Today</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>With over 28 years of teaching experience, I provide expert guidance in CSEC P.O.B. and Economics to help you succeed.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services Offered</h2>
+        <p>I offer both online and in-person classes tailored to your learning needs:</p>
+        <ul>
+            <li>Subject: CSEC P.O.B. (Principles of Business)</li>
+            <li>Subject: CSEC Economics</li>
+            <li>Flexible scheduling options</li>
+            <li>Personalized learning tools and assessments</li>
+        </ul>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <h2>Course Materials & Resources</h2>
+        <p>Access study guides, assignments, and other educational resources here:</p>
+        <ul>
+            <li><a href="https://classroom.google.com" target="_blank">Google Classroom (Class Code: 65ozpy4)</a></li>
+            <li><a href="https://docs.google.com/document/d/1IK4qUoujVEE02AM5KXF7LfrDD2SxDmNVp9qVNBrE8Rc/edit?usp=sharing" target="_blank">Google Document</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1Wa8r-HRpbxIHyzgawCmVeYTslAjNwOGF5YJesG5JTAE/edit?usp=sharing" target="_blank">Google Slide</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScSnZnxb7OazbT4z-djz6wvQoFbKg0PAaVTyNP2NyI9I_rAxw/viewform?usp=sharing" target="_blank">Google Form</a></li>
+        </ul>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section id="collaboration" class="collab">
+        <h2>Collaboration Features</h2>
+        <p>Engage with peers and participate in group projects:</p>
+        <ul>
+            <li>Group Discussions</li>
+            <li>Collaborative Assignments</li>
+            <li>Interactive Learning Tools</li>
+        </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog & News</h2>
+        <div class="blog-post">
+            <h3>How to Excel in CSEC P.O.B.</h3>
+            <p>Top tips and strategies for acing your exams.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>Latest Updates in Economics</h3>
+            <p>Stay informed with trends and changes in the field.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Ready to make an investment in your future? Reach out today!</p>
+        <p><strong>Phone:</strong> 484-7474</p>
+        <p><strong>Email:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
+        <p><strong>Feedback & Support:</strong> <a href="#">Submit Your Feedback</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hanna Camille Academy | Designed for Success</p>
+        <p>Accessibility Features Included | Mobile-Friendly Design</p>
+    </footer>
+</body>
+</html>
