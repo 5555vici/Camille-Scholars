@@ -97,27 +97,20 @@
             text-align: center;
         }
 
-       /* Hover effect for the questionnaire link in the Camille Scholar Section */
-        #camille-scholar a {
-            color: #0077cc; /* Ensure base color is set */
-            font-weight: bold;
-            text-decoration: none; /* Remove underline from the start */
-            transition: all 0.3s ease; /* Smooth transition effect */
-        }
+      /* Hover effect for both the sentence and "Google Form" link */
+#camille-scholar a {
+    color: #0077cc; /* Default color */
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
 
-        #camille-scholar a:hover {
-            color: #e65100; /* Change color on hover (a darker orange) */
-            text-decoration: underline; /* Underline the link on hover */
-            transform: scale(1.05); /* Slightly enlarge the link */
-        }
-
-        /* Hover effect for "Google Form" link */
-        #camille-scholar a:hover {
-            color: orange; /* Change color on hover */
-            text-decoration: underline; /* Underline the text on hover */
-            transform: scale(1.05); /* Slightly enlarge the link */
-            transition: all 0.3s ease-in-out; /* Smooth hover animation */
-        }
+/* Hover effect for links in the Camille Scholar section */
+#camille-scholar a:hover {
+    color: orange; /* Change color on hover */
+    text-decoration: underline; /* Underline the text on hover */
+    transform: scale(1.05); /* Slightly enlarge the link */
+}
 
         /* Course Materials */
         .resources ul, .collab ul {
