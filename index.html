@@ -214,6 +214,63 @@
         }
     </style>
 
+    /* Chatbox Styling */
+#chatbox-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-width: 90%;
+    z-index: 1000;
+}
+
+#chatbox-header {
+    background-color: #006400;
+    color: gold;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#chatbox-content {
+    display: none;
+    border: 1px solid #006400;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#chatbox-content form input,
+#chatbox-content form textarea {
+    width: calc(100% - 20px);
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chatbox-content form button {
+    background-color: #006400;
+    color: gold;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+#chatbox-content form button:hover {
+    background-color: orange;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
      <!-- Google tag (gtag.js) -->
      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XHM7P0FCR"></script>
      <script>
@@ -374,6 +431,25 @@
     </form>
 </section>
 
+    <!-- Chatbox -->
+<div id="chatbox-container">
+    <div id="chatbox-header">Chat with Us!</div>
+    <div id="chatbox-content">
+        <form action="https://formspree.io/f/xeoqybkj" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
     <!-- Footer -->
     <footer>
         <p>Follow me on:</p>
@@ -383,5 +459,12 @@
         <p>&copy; 2024 Camille Scholars | Designed for Success</p>
         <p>Accessibility Features Included | Mobile-Friendly Design</p>
     </footer>
+
+    <script>
+    document.getElementById("chatbox-header").addEventListener("click", function() {
+        const content = document.getElementById("chatbox-content");
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+</script>
 </body>
 </html>
